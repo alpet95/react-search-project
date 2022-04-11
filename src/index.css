@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Odia:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Anek Odia", sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #283747;
+  background-color: #d0ece7;
+  overflow: hidden;
+}
+
+/* ========== scroller ========== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #808b96;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2e4053;
+}

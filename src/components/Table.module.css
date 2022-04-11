@@ -1,0 +1,35 @@
+.wrapper {
+  width: 100%;
+  height: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: 20px 0px;
+}
+
+table {
+  width: 100%;
+  margin: 15px 0px;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f4f6f7;
+}
+
+th {
+  height: 80px;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+  color: #2e4053;
+}
+
+th,
+td {
+  width: 33.33%;
+  font-size: 18px;
+  /* border: 1px solid #2e4053; */
+}
