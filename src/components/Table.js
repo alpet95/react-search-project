@@ -2,6 +2,23 @@
 import classes from "./Table.module.css";
 
 const Table = (props) => {
+  let content;
+  if (props.data.length === 0) {
+    content = (
+      <tr>
+        <td colSpan="3">No Users Found</td>
+      </tr>
+    );
+  } else {
+    content = props.data.map((item) => (
+      <tr key={item.id}>
+        <td>{item.first_name}</td>
+        <td>{item.last_name}</td>
+        <td>{item.email}</td>
+      </tr>
+    ));
+  }
+
   return (
     <div className={classes.wrapper}>
       <table className={classes.table}>
@@ -11,13 +28,7 @@ const Table = (props) => {
             <th>Last Name</th>
             <th>Email</th>
           </tr>
-          {props.data.map((item) => (
-            <tr key={item.id}>
-              <td>{item.first_name}</td>
-              <td>{item.last_name}</td>
-              <td>{item.email}</td>
-            </tr>
-          ))}
+          {content}
         </tbody>
       </table>
     </div>
