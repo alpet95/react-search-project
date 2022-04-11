@@ -2,6 +2,7 @@
 import classes from "./Table.module.css";
 
 const Table = (props) => {
+  // ========== conditional content ==========
   let content;
   if (props.data.length === 0) {
     content = (
@@ -9,7 +10,8 @@ const Table = (props) => {
         <td colSpan="3">No Users Found</td>
       </tr>
     );
-  } else {
+  }
+  if (props.data.length > 0) {
     content = props.data.map((item) => (
       <tr key={item.id}>
         <td>{item.first_name}</td>
