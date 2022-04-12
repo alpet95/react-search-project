@@ -7,11 +7,16 @@
 }
 
 body {
+  height: 100vh;
   font-family: "Anek Odia", sans-serif;
   font-size: 14px;
   line-height: 1.2;
   color: #283747;
   overflow: hidden;
+}
+
+#root {
+  height: 100%;
 }
 
 /* ========== scroller ========== */
